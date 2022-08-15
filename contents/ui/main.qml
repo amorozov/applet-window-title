@@ -138,6 +138,10 @@ Item {
             return "";
         }
 
+        if (!isActiveWindowMaximized && plasmoid.configuration.filterByMaximized){
+            return "";
+        }
+
         if (plasmoid.configuration.style === 0){ /*Application*/
             return Tools.applySubstitutes(activeTaskItem.appName);
         } else if (plasmoid.configuration.style === 1){ /*Title*/
