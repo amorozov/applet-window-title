@@ -139,7 +139,7 @@ Item {
         }
 
         if (!isActiveWindowMaximized && plasmoid.configuration.filterByMaximized){
-            return "";
+            return fallBackText;
         }
 
         if (plasmoid.configuration.style === 0){ /*Application*/
